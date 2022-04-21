@@ -22,11 +22,12 @@ module TencentCloud
               "name/cos:UploadPart",
               "name/cos:CompleteMultipartUpload"
             ],
-            "resource": "qcs::cos:#{config.region}/#{config.secret_id}:#{config.bucket}/*",
+            "resource": "qcs::cos:#{config.region}:uid/#{config.bucket.split('-').last}:#{config.bucket}/*",
             "effect": "allow"
           }
         ]
       }.to_json
+      p policy
       payload = {
         service: 'sts',
         headers: {
