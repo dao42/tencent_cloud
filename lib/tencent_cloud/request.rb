@@ -27,7 +27,6 @@ module TencentCloud
           }
         ]
       }.to_json
-      p policy
       payload = {
         service: 'sts',
         headers: {
