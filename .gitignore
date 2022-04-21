@@ -1,0 +1,10 @@
+log
+.lock
+*.gem
+.idea
+.ruby-version
+.bundle/
+vendor/
+pkg/
+coverage/
+gemfiles/*.lock
