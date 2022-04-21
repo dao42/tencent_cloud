@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "tencent_cloud/version"
 
 Gem::Specification.new do |s|
-  s.name        = 'tencent-cloud'
+  s.name        = 'tencent_cloud'
   s.version     = TencentCloud::VERSION
   s.summary     = "腾讯云api"
   s.description = "腾讯云api sdk"
